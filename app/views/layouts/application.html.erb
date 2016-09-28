@@ -47,7 +47,24 @@
         <h1>The BookStore <small><%= @page_title ? @page_title : 'Welcome' %></small></h1>
       </div>
     </header>
-    <%= yield %>
 
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <%= yield %>
+          </div>
+          <div class="col-md-4">
+            <%= render 'partials/sidebar' %>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>Cirquitree &copy; 2016</p>
+      </div>
+    </footer>
   </body>
 </html>
