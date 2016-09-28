@@ -1,2 +1,23 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<div id="books-show">
+  <h2>Ruby on Rails Power</h2>
+  <div class="books-show-left">
+    <%= image_tag 'covers/ruby_on_rails_power.jpg' %>
+  </div>
+  <div class="books-show-right">
+    <h3>Book Info:</h3>
+    <ul>
+      <li><strong>Category: </strong>Ruby on Rails</li>
+      <li><strong>Author: </strong>Aneesha Bakharia</li>
+      <li><strong>Publisher: </strong>Course Technology PTR</li>
+      <li><strong>Year: </strong>2007</li>
+      <li><strong>ISBN: </strong>1598632167</li>
+      <li><strong>Format: </strong>Paperback</li>
+      <li><strong>Pages: </strong>448</li>
+    </ul>
+    <%= link_to "Buy for $3.99", 'https://www.amazon.com/Ruby-Rails-Power-Comprehensive-Guide/dp/1598632167/ref=mt_paperback?_encoding=UTF8&me=', class: 'btn btn-success', target: '_blank' %>
+  </div>
+  <div class="clearfix">
+    <h4>Excerpt</h4>
+    <p>Health goth enamel pin intelligentsia gochujang, mumblecore put a bird on it shoreditch tofu. Schlitz live-edge la croix gentrify hexagon health goth lomo af ramps, literally skateboard. Artisan tofu vaporware pabst aesthetic. Lo-fi tumeric selfies franzen subway tile, cold-pressed retro. Gentrify man bun jianbing, pug franzen la croix try-hard tousled ennui stumptown selvage banjo everyday carry coloring book. Organic 3 wolf moon man braid, fixie post-ironic typewriter ennui bushwick asymmetrical skateboard poke ramps. Pabst literally tousled occupy prism keytar.</p>
+  </div>
+</div>
