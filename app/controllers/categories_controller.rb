@@ -6,8 +6,13 @@ class CategoriesController < ApplicationController
 
   def create
     @category = Category.new(category_params)
-    @category.save
-    redirect_to categories_path
+    if @category.save
+      flash[:notice] = "Category created!"
+      redirect_to categories_path
+    else
+      # flash[:alert] = "Please enter a category!"
+      render 'new'
+    end
   end
 
   def update
