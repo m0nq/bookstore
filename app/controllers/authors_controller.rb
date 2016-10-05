@@ -10,24 +10,31 @@ class AuthorsController < ApplicationController
       flash[:notice] = "Author created!"
       redirect_to authors_path
     else
-      # flash[:alert] = "Please enter a category!"
+      # flash[:alert] = "Please enter a author!"
       render 'new'
     end
   end
 
   def update
+    @author = Author.find(params[:id])
+    @author.update(author_params)
+    flash[:notice] = "Author updated!"
+    redirect_to categories_path
   end
 
   def edit
+    @author = Author.find(params[:id])
   end
 
   def destroy
+    @author = Author.find(params[:id])
+    @author.destroy
+    flash[:notice] = "Author removed!"
+    redirect_to authors_path
   end
 
   def index
-  end
-
-  def show
+    @authors = Author.all
   end
 
   private
