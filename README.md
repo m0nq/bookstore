@@ -1,17 +1,9 @@
 # Bookstore
 
-* Ruby version
+A CRUD app to store and locate online books of a user specified category, author, and publisher. As well as links to images for those books
 
-* System dependencies
+* Ruby v2
 
-* Configuration
+* Rails v5
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* MySQL v5
